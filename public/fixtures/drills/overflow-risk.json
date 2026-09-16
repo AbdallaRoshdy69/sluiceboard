@@ -1,0 +1,12 @@
+{
+  "id": "overflow-risk",
+  "title": "Clearwell high-high level simulated",
+  "tag": "LSHH-409",
+  "area": "storage",
+  "reading": 94,
+  "unit": "%",
+  "acknowledged": false,
+  "critical": true,
+  "notes": "Follow the drill card and confirm the inlet valve interlock.",
+  "raisedAt": "2026-09-18T09:49"
+}

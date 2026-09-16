@@ -1,0 +1,12 @@
+{
+  "id": "dosing-fault",
+  "title": "Coagulant dosing feedback lost",
+  "tag": "FIT-188",
+  "area": "filtration",
+  "reading": 0,
+  "unit": "L/h",
+  "acknowledged": false,
+  "critical": true,
+  "notes": "Verify tank level and local pump indication before manual operation.",
+  "raisedAt": "2026-09-18T09:37"
+}

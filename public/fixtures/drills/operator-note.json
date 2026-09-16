@@ -1,0 +1,12 @@
+{
+  "id": "operator-note",
+  "title": "Manual sample awaiting laboratory result",
+  "tag": "LAB-301",
+  "area": "disinfection",
+  "reading": 1,
+  "unit": "sample",
+  "acknowledged": true,
+  "critical": false,
+  "notes": "Leave the alarm acknowledged until the signed result is available.",
+  "raisedAt": "2026-09-18T10:02"
+}
