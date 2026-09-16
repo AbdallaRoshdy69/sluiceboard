@@ -1,0 +1,12 @@
+{
+  "id": "pump-trip",
+  "title": "High-lift pump thermal trip",
+  "tag": "MTR-428",
+  "area": "storage",
+  "reading": 96,
+  "unit": "°C",
+  "acknowledged": false,
+  "critical": true,
+  "notes": "Confirm standby pump availability before resetting the starter.",
+  "raisedAt": "2026-09-18T09:28"
+}

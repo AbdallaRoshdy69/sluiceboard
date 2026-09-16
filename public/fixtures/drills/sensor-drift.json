@@ -1,0 +1,12 @@
+{
+  "id": "sensor-drift",
+  "title": "Paired turbidity sensors disagree",
+  "tag": "AIT-121",
+  "area": "intake",
+  "reading": 8.7,
+  "unit": "%",
+  "acknowledged": false,
+  "critical": false,
+  "notes": "Compare both probes with a grab sample before suppressing either tag.",
+  "raisedAt": "2026-09-18T09:04"
+}

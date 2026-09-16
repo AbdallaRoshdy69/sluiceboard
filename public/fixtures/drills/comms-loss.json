@@ -1,0 +1,12 @@
+{
+  "id": "comms-loss",
+  "title": "Remote reservoir telemetry stale",
+  "tag": "COM-503",
+  "area": "storage",
+  "reading": 14,
+  "unit": "min",
+  "acknowledged": false,
+  "critical": true,
+  "notes": "Use the last confirmed level and call the remote site operator.",
+  "raisedAt": "2026-09-18T09:16"
+}
