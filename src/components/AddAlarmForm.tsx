@@ -89,7 +89,12 @@ export function AddAlarmForm({ onAdd }: AddAlarmFormProps) {
       </div>
 
       {open ? (
-        <form id="add-alarm-form" className="add-alarm-form" onSubmit={handleSubmit}>
+        <form
+          id="add-alarm-form"
+          className="add-alarm-form"
+          aria-label="New alarm report"
+          onSubmit={handleSubmit}
+        >
           <div className="form-grid">
             <div className="field wide-field">
               <label htmlFor="alarm-title">Alarm title</label>
