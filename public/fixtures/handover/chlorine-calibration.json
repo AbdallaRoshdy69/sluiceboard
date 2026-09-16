@@ -1,0 +1,12 @@
+{
+  "id": "chlorine-calibration",
+  "title": "Residual analyzer calibration due",
+  "tag": "AIT-325",
+  "area": "disinfection",
+  "reading": 26,
+  "unit": "h",
+  "acknowledged": true,
+  "critical": false,
+  "notes": "Use the bench result logged by the morning operator.",
+  "raisedAt": "2026-09-17T06:30"
+}

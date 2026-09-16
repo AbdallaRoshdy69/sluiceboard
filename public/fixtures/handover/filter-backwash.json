@@ -1,0 +1,12 @@
+{
+  "id": "filter-backwash",
+  "title": "Backwash sequence delayed",
+  "tag": "SEQ-214",
+  "area": "filtration",
+  "reading": 17,
+  "unit": "min",
+  "acknowledged": false,
+  "critical": false,
+  "notes": "Filter two is holding until washwater pressure recovers.",
+  "raisedAt": "2026-09-17T06:12"
+}
