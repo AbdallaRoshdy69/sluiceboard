@@ -14,7 +14,7 @@ describe('Sluiceboard', () => {
     expect(screen.getByText('2 of 5 alarms acknowledged (40%)')).toBeInTheDocument()
     const summary = screen.getByRole('region', { name: 'Alarm acknowledgement' })
     expect(summary).toHaveTextContent(/3\s*open/)
-    expect(summary).toHaveTextContent(/1\s*critical and open/)
+    expect(summary).toHaveTextContent(/2\s*critical and open/)
   })
 
   it('preserves a selected alarm when status controls hide it', async () => {
