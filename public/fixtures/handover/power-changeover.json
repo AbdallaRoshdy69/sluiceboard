@@ -1,0 +1,12 @@
+{
+  "id": "power-changeover",
+  "title": "Duty pump changeover incomplete",
+  "tag": "MCC-116",
+  "area": "intake",
+  "reading": 1,
+  "unit": "attempt",
+  "acknowledged": false,
+  "critical": true,
+  "notes": "Keep pump one in service until the electrician signs off.",
+  "raisedAt": "2026-09-17T07:31"
+}

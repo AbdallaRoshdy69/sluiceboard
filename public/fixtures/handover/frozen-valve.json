@@ -1,0 +1,12 @@
+{
+  "id": "frozen-valve",
+  "title": "Outlet valve position unchanged",
+  "tag": "ZIT-517",
+  "area": "storage",
+  "reading": 63,
+  "unit": "%",
+  "acknowledged": true,
+  "critical": false,
+  "notes": "Mechanical inspection is booked for the afternoon window.",
+  "raisedAt": "2026-09-17T07:44"
+}

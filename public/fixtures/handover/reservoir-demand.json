@@ -1,0 +1,12 @@
+{
+  "id": "reservoir-demand",
+  "title": "Reservoir demand above forecast",
+  "tag": "FIT-509",
+  "area": "storage",
+  "reading": 118,
+  "unit": "%",
+  "acknowledged": false,
+  "critical": false,
+  "notes": "Review district meter totals at the next handover.",
+  "raisedAt": "2026-09-17T07:05"
+}
