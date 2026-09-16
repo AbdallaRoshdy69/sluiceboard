@@ -12,8 +12,9 @@ describe('Sluiceboard', () => {
       screen.getByRole('progressbar', { name: '2 of 5 alarms acknowledged' }),
     ).toHaveAttribute('aria-valuenow', '2')
     expect(screen.getByText('2 of 5 alarms acknowledged (40%)')).toBeInTheDocument()
-    expect(screen.getByText('3 open')).toBeInTheDocument()
-    expect(screen.getByText('1 critical and open')).toBeInTheDocument()
+    const summary = screen.getByRole('region', { name: 'Alarm acknowledgement' })
+    expect(summary).toHaveTextContent(/3\s*open/)
+    expect(summary).toHaveTextContent(/1\s*critical and open/)
   })
 
   it('preserves a selected alarm when status controls hide it', async () => {
@@ -99,22 +100,23 @@ describe('Sluiceboard', () => {
     render(<App />)
 
     await user.click(screen.getByRole('button', { name: 'Add alarm report' }))
-    const title = screen.getByLabelText('Alarm title')
+    const form = screen.getByRole('form', { name: 'New alarm report' })
+    const title = within(form).getByLabelText('Alarm title')
     expect(title).toHaveFocus()
     await user.type(title, 'Backwash flow below target')
-    await user.type(screen.getByLabelText('Instrument tag'), 'fit-271')
-    await user.selectOptions(screen.getByLabelText('Process area'), 'filtration')
-    await user.type(screen.getByLabelText('Current reading'), '18.4')
-    await user.type(screen.getByLabelText('Unit'), 'L/s')
-    fireEvent.change(screen.getByLabelText('Raised at'), {
+    await user.type(within(form).getByLabelText('Instrument tag'), 'fit-271')
+    await user.selectOptions(within(form).getByLabelText('Process area'), 'filtration')
+    await user.type(within(form).getByLabelText('Current reading'), '18.4')
+    await user.type(within(form).getByLabelText('Unit'), 'L/s')
+    fireEvent.change(within(form).getByLabelText('Raised at'), {
       target: { value: '2026-09-17T08:15' },
     })
     await user.type(
-      screen.getByLabelText('Operator note'),
+      within(form).getByLabelText('Operator note'),
       'Inspect the washwater valve before the next sequence.',
     )
-    await user.click(screen.getByRole('checkbox', { name: 'Mark as critical' }))
-    await user.click(screen.getByRole('button', { name: 'Add to open queue' }))
+    await user.click(within(form).getByRole('checkbox', { name: 'Mark as critical' }))
+    await user.click(within(form).getByRole('button', { name: 'Add to open queue' }))
 
     const row = screen.getByRole('row', { name: /Backwash flow below target/ })
     expect(within(row).getByText('FIT-271')).toBeInTheDocument()
